@@ -13,25 +13,54 @@ header {
   position: sticky;
   top: 0;
   background-color: #fff;
-  height: 70px;
+  height: 60px;
   width: 100%;
   padding: 10px;
   z-index: 1;
 }
 .header_container {
-  background-color: red;
-  padding: 5px;
+  padding: 2px;
   max-width: 760px;
   margin-left: auto;
   margin-right: auto;
 }
 .header_container > img {
-  height: 30px;
+  height: 26px;
   width: auto;
 }
 
 /* MAIN STYLES */
-main {
+
+/* ------------- DESIGNATION DETAILS----------------------------------- */
+.designation_container {
+  height: 210px;
+  width: 100%;
+}
+.designation_container_content {
+  /* background-color: aliceblue; */
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+}
+.designation_container_content > h2 {
+  font-size: 2em;
+  font-weight: 400;
+  margin-bottom: 20px;
+  font: normal 400 33px / 1.4 Lato;
+  color: #515357;
+  text-transform: none;
+  letter-spacing: 0px;
+  margin: 17.5px 0;
+}
+.designation_container_content > p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #808080;
+  font: normal 700 12px / 1.4 Lato;
+  letter-spacing: 1px;
+}
+.form_container {
+  background-color: #f9f9f9;
   height: 100vh;
-  background-color: aqua;
 }
