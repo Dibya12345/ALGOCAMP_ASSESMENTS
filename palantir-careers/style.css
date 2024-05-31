@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+/* RESET THE BROWSER STYLES  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+/* HEADER  */
+header {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  height: 70px;
+  width: 100%;
+  padding: 10px;
+  z-index: 1;
+}
+.header_container {
+  background-color: red;
+  padding: 5px;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header_container > img {
+  height: 30px;
+  width: auto;
+}
+
+/* MAIN STYLES */
+main {
+  height: 100vh;
+  background-color: aqua;
+}
