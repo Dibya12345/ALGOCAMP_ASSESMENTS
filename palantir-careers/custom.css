@@ -144,6 +144,11 @@
     padding: 10px;
   }
 }
+
+.special_input_container_upload {
+  display: flex;
+  justify-content: flex-start;
+}
 @media only screen and (max-width: 600px) {
   .special_input_container {
     flex-direction: column;
