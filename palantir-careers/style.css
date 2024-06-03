@@ -1,28 +1,41 @@
+/* Import Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url(custom.css);
-/* RESET THE BROWSER STYLES  */
+
+/* CSS Variables for Colors */
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-light-gray: #f9f9f9;
+  --color-gray: #515357;
+  --color-footer-bg: #edeef1;
+}
+
+/* Reset Browser Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
 }
-/* HEADER  */
+
+/* Header Styles */
 header {
   position: sticky;
   top: 0;
-  background-color: #fff;
+  background-color: var(--color-white);
   height: 60px;
   width: 100%;
   padding: 10px;
   z-index: 1;
 }
+
 .header_container {
   padding: 2px;
   max-width: 760px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
+
 .header_container > img {
   height: 26px;
   width: auto;
@@ -34,49 +47,48 @@ header {
   }
 }
 
-/* MAIN STYLES */
-/* ------------- designation details----------------------------------- */
+/* Designation Container Styles */
 .designation_container {
   height: 210px;
   width: 100%;
 }
+
 .designation_container_content {
   max-width: 760px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   height: 100%;
 }
 
 @media only screen and (max-width: 600px) {
   .designation_container {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 0 30px;
   }
 }
 
-/* -------------------- form styles -------------- */
+/* Form Container Styles */
 .form_container {
-  background-color: #f9f9f9;
+  background-color: var(--color-light-gray);
   width: 100%;
   height: auto;
 }
+
 .form_container_sub {
   height: auto;
   max-width: 760px;
-  margin-left: auto;
-  margin-right: auto;
-  /* background-color: lightblue; */
+  margin: 0 auto;
 }
 
 @media only screen and (max-width: 600px) {
   .form_container_sub {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 0 30px;
   }
 }
+
+/* Pronoun Container Styles */
 .pronoun_container {
   width: 100%;
 }
+
 .pronouns_list_container {
   width: 64%;
   list-style: none;
@@ -84,7 +96,6 @@ header {
 
 .pronouns_list {
   max-width: 700px;
-  /* background-color: lightgreen; */
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -93,6 +104,7 @@ header {
 .pronouns_list > li > div {
   width: 100%;
 }
+
 @media only screen and (max-width: 600px) {
   .pronouns_list {
     width: 100%;
@@ -101,23 +113,26 @@ header {
     width: 100%;
   }
 }
+
+/* Language Skill Container Styles */
 .language_skill_container {
   list-style: none;
 }
+
 .language_skill_container > li {
-  margin-left: 10px;
-  margin-top: 20px;
+  margin: 10px 0 0 10px;
 }
 
+/* Employment Container Styles */
 .employment_container {
   margin-top: 40px;
 }
 
+/* Disability Container Styles */
 .disability_container {
-  color: #515357;
+  color: var(--color-gray);
   font: normal 400 14px / 1.8 Lato;
-  margin-left: 18px;
-  margin-top: 20px;
+  margin: 20px 0 0 18px;
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(3, 1fr);
@@ -129,15 +144,16 @@ header {
   }
 }
 
+/* Button Container Styles */
 .button_container {
   display: flex;
   justify-content: center;
   margin-top: 40px;
 }
+
 .button_container > button {
-  background-color: black;
-  color: white;
-  margin: 0 auto;
+  background-color: var(--color-black);
+  color: var(--color-white);
   width: 200px;
   height: 30px;
   border: none;
@@ -146,13 +162,13 @@ header {
   font: normal 700 14px / 1.4 Lato;
 }
 
-/* FOOTER STYLING */
-
+/* Footer Styles */
 footer {
   text-align: center;
   padding: 80px;
-  background: #edeef1;
+  background: var(--color-footer-bg);
 }
+
 footer > p > img {
   height: 24px;
 }
