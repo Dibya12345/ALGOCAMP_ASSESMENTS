@@ -250,8 +250,13 @@
     }
   }
 
+  .special_input_container_upload {
+    flex-direction: column;
+  }
+
   .application-field {
     margin-top: 20px;
+    margin-left: 0;
   }
 }
 
