@@ -300,3 +300,8 @@ p {
 .not_required {
   display: none;
 }
+.div_typography {
+  margin-top: 20px;
+  color: #515357;
+  font: normal 400 14px / 1.8 Lato;
+}
